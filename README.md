@@ -21,9 +21,9 @@ It allows user to input their feedback and ratings based on various aspect of te
 
 
 Student Dev:
-Pe Benito, Ballian Roi\n
-Mendoza, Sean Rain B.\n
-Pabellano, Shawn Vincent
+- Pe Benito, Ballian Roi
+- Mendoza, Sean Rain B.
+- Pabellano, Shawn Vincent
 
 
 ..
