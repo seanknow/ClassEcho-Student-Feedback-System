@@ -28,8 +28,10 @@ public class Main {
                     }
                     break;
                 case 2:
-                    System.out.print("ENTER STUDENT ID: ");
+                    System.out.println();
+                    System.out.print("ENTER UNIVERSITY SRCODE: ");
                     String studentID = sc.next();
+                    System.out.println();
                     methods.studentPOV(studentID);  // Pass studentID
                     break;
                 case 3:

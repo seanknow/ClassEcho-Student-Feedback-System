@@ -16,28 +16,28 @@ class Feedback {
     }
 
     public String getStudentID() { 
-        return studentID;  // Kinukuha yung ID ng student
+        return studentID;  // kinukuha yung ID ng student
     }
     public int getRating() {
-        return rating;  // Kinukuha yung rating na ibinigay ng student
+        return rating;  // kinukuha yung rating na ibinigay ng student
     }
     public String getComments() { 
-        return comments;  // Kinukuha yung comments na ibinigay ng student
+        return comments;  // kinukuha yung comments na ibinigay ng student
     }
 
     @Override
     public String toString() {
-        // Ipi-print ang lahat ng detalye ng feedback
+        // ipi-print ang lahat ng detalye ng feedback
         return "Student ID: " + studentID + ", Rating: " + rating + ", Comments: " + comments;
     }
 }
 
 public class Methods {
     private static Scanner sc = new Scanner(System.in);
-    // Map para i-store yung feedback: key = subject, value = list ng Feedback objects
+    // map para i-store yung feedback: key = subject, value = list ng Feedback objects
     private static Map<String, List<Feedback>> feedbackData = new HashMap<>();
 
-    // I-initialize yung map with subjects para ready na yung list
+    // initialize yung map with subjects para ready na yung list
     static {
         String[] subjects = {"Object Oriented Programming", "Advanced Computer Programming", 
                              "Database Management System", "Computer Networking", 
@@ -59,11 +59,11 @@ public class Methods {
 
             switch (choice1) {
                 case 1:
-                    viewFeedback(); // I-display lahat ng feedback
+                    viewFeedback(); // i-display lahat ng feedback
                     break;
                 case 2:
                     System.out.println("EXITING ADMINISTRATOR PORTAL. THANK YOU!");
-                    return; // Exit ng admin portal
+                    return; 
                 default:
                     System.out.println("INVALID OPTION. PLEASE TRY AGAIN.");
                     break;
@@ -72,7 +72,7 @@ public class Methods {
     }
 
     public void studentPOV(String studentID) {  
-        // Loop ng student portal hanggang sa exit
+        // loop for student portal hanggang sa exit
         while (true) {
             System.out.println("======STUDENT FEEDBACK=====");
             System.out.println("1. OBJECT ORIENTED PROGRAMMING");
@@ -89,28 +89,28 @@ public class Methods {
 
             switch (choice) {
                 case 1:
-                    this.Oop(studentID); // Tumatawag ng method para sa OOP feedback
+                    this.Oop(studentID); // tinatawag ang method para sa OOP feedback
                     break;
                 case 2:
-                    this.Acp(studentID); // Tumatawag ng method para sa ACP feedback
+                    this.Acp(studentID);
                     break;
                 case 3:
-                    this.Dbms(studentID); // Tumatawag ng method para sa DBMS feedback
+                    this.Dbms(studentID); 
                     break;
                 case 4:
-                    this.Cn(studentID); // Tumatawag ng method para sa CN feedback
+                    this.Cn(studentID); 
                     break;
                 case 5:
-                    this.Phy(studentID); // Tumatawag ng method para sa Physics feedback
+                    this.Phy(studentID); 
                     break;
                 case 6:
-                    this.Dm(studentID); // Tumatawag ng method para sa DM feedback
+                    this.Dm(studentID); 
                     break;
                 case 7:
-                    this.Al(studentID); // Tumatawag ng method para sa ASEAN Literature feedback
+                    this.Al(studentID);
                     break;
                 case 8:
-                    this.Pf3(studentID); // Tumatawag ng method para sa PATHFIT 3 feedback
+                    this.Pf3(studentID); 
                     break;
                 case 9:
                     System.out.println("EXITING FEEDBACK SYSTEM. THANK YOU!");
@@ -122,7 +122,7 @@ public class Methods {
         }
     }
 
-    // Methods para sa bawat subject, tinatawag yung helper method
+    //methods para sa bawat subject
     public void Oop(String studentID) {
         collectAndSaveFeedback("Object Oriented Programming", studentID);
     }
@@ -155,38 +155,41 @@ public class Methods {
         collectAndSaveFeedback("PATHFIT 3", studentID);
     }
 
-    // Helper method para mangolekta at mag-save ng feedback
+    // helper method para mangolekta at mag-save ng feedback
     private void collectAndSaveFeedback(String subject, String studentID) {
-        System.out.println("Providing feedback for " + subject + ".");
-        System.out.println("Submitting feedback for Student ID: " + studentID);  // Ipakita yung student ID
+        System.out.println();
+        System.out.println("Course/Subject: " + subject + ".");
+        System.out.println("Student ID: " + studentID);  // ipakita yung student ID
 
-        int rating = -1;  // Simula ng invalid value
+        int rating = -1;  // dimula ng invalid value
         while (rating < 1 || rating > 5) {
-            System.out.print("Enter your rating (1-5): ");
+            System.out.println("RATE YOUR INSTRUCTOR | 1 - LOWEST | 2 - POOR | 3 - AVERAGE | 4 - GOOD | 5 - EXECELLENT");
+            System.out.print("Attenting class on time?: ");
             if (sc.hasNextInt()) {
                 rating = sc.nextInt();
                 if (rating < 1 || rating > 5) {
-                    System.out.println("Invalid rating. Please enter a number between 1 and 5."); // Check kung valid rating
+                    System.out.println("Invalid rating. Please enter a number between 1 and 5."); // chcheck kung valid rating
                 }
             } else {
-                System.out.println("Invalid input. Please enter a number between 1 and 5."); // Kung hindi number
-                sc.next();  // Kainin yung invalid input para maiwasan infinite loop
+                System.out.println("Invalid input. Please enter a number between 1 and 5."); // kung hindi number
+                sc.next();  // kainin yung invalid input para maiwasan infinite loop
             }
         }
         
-        sc.nextLine();  // Kainin yung newline pagkatapos ng nextInt()
+        sc.nextLine();  // kainin yung newline pagkatapos ng nextInt()
         System.out.print("Enter your comments: ");
         String comments = sc.nextLine();
 
-        // Gumawa ng Feedback object at i-save sa map
+        // guimawa ng Feedback object at i-save sa map
         Feedback feedback = new Feedback(studentID, rating, comments);
         feedbackData.get(subject).add(feedback);
-        System.out.println("Feedback for " + subject + " submitted and saved!");
+        System.out.println("\nFeedback for " + subject + " submitted!\n");
+    
     }
 
-    // Admin method para makita lahat ng feedback
+    // admin method para makita lahat ng feedback
     private void viewFeedback() {
-        System.out.println("====== AGGREGATED FEEDBACK ======");
+        System.out.println("====== LIST FEEDBACK ======");
         for (Map.Entry<String, List<Feedback>> entry : feedbackData.entrySet()) {
             String subject = entry.getKey();
             List<Feedback> feedbacks = entry.getValue();
@@ -196,13 +199,13 @@ public class Methods {
                 double avgRating = feedbacks.stream().mapToInt(Feedback::getRating).average().orElse(0.0);
                 System.out.println(subject + ": Average Rating: " + String.format("%.2f", avgRating) + ", Total Feedbacks: " + feedbacks.size());
                 
-                // Ipakita lahat ng individual feedback kasama student IDs
+                // ipapakita lahat ng individual feedback kasama student IDs
                 System.out.println("  Individual Feedbacks:");
                 for (Feedback f : feedbacks) {
-                    System.out.println("    " + f.toString());  // Shows Student ID, Rating, Comments
+                    System.out.println("    " + f.toString());  // shows Student ID, Rating, Comments
                 }
             }
-            System.out.println();  // Blank line para readable
+            System.out.println();  // blank line para readable
         }
     
     }
