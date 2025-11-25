@@ -1,6 +1,9 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
 
-// Simple class to represent feedback data (unchanged)
 class Feedback {
     private String studentID;
     private int rating;
@@ -13,56 +16,54 @@ class Feedback {
     }
 
     public String getStudentID() { 
-        return studentID;
-     }
+        return studentID;  // Kinukuha yung ID ng student
+    }
     public int getRating() {
-         return rating; 
-        }
+        return rating;  // Kinukuha yung rating na ibinigay ng student
+    }
     public String getComments() { 
-        return comments; 
+        return comments;  // Kinukuha yung comments na ibinigay ng student
     }
 
     @Override
     public String toString() {
+        // Ipi-print ang lahat ng detalye ng feedback
         return "Student ID: " + studentID + ", Rating: " + rating + ", Comments: " + comments;
     }
 }
 
 public class Methods {
     private static Scanner sc = new Scanner(System.in);
-    // Map to store feedback: key = subject name, value = list of Feedback objects
+    // Map para i-store yung feedback: key = subject, value = list ng Feedback objects
     private static Map<String, List<Feedback>> feedbackData = new HashMap<>();
 
-    // Initialize the map with subjects (so we have lists ready)
+    // I-initialize yung map with subjects para ready na yung list
     static {
         String[] subjects = {"Object Oriented Programming", "Advanced Computer Programming", 
                              "Database Management System", "Computer Networking", 
                              "Physics-Calculus Based", "Discrete Mathematics", 
                              "ASEAN Literature", "PATHFIT 3"};
         for (String subject : subjects) {
-            feedbackData.put(subject, new ArrayList<>());
+            feedbackData.put(subject, new ArrayList<>()); // Lahat ng subjects may empty list sa simula
         }
     }
 
     public void adminPOV() {
+        // Loop ng admin portal hanggang sa exit
         while (true) {
             System.out.println("======ADMINISTRATOR PORTAL=====");
             System.out.println("1. VIEW FEEDBACK");
-            System.out.println("2. MANAGE SUBJECTS");
-            System.out.println("3. EXIT");
+            System.out.println("2. LOG OUT");
             System.out.print("ENTER OPTION: ");
             int choice1 = sc.nextInt();
 
             switch (choice1) {
                 case 1:
-                    viewFeedback();
+                    viewFeedback(); // I-display lahat ng feedback
                     break;
                 case 2:
-                    manageSubjects();
-                    break;
-                case 3:
                     System.out.println("EXITING ADMINISTRATOR PORTAL. THANK YOU!");
-                    return;
+                    return; // Exit ng admin portal
                 default:
                     System.out.println("INVALID OPTION. PLEASE TRY AGAIN.");
                     break;
@@ -70,7 +71,8 @@ public class Methods {
         }
     }
 
-    public void studentPOV(String studentID) {  // Accepts studentID
+    public void studentPOV(String studentID) {  
+        // Loop ng student portal hanggang sa exit
         while (true) {
             System.out.println("======STUDENT FEEDBACK=====");
             System.out.println("1. OBJECT ORIENTED PROGRAMMING");
@@ -87,32 +89,32 @@ public class Methods {
 
             switch (choice) {
                 case 1:
-                    this.Oop(studentID);
+                    this.Oop(studentID); // Tumatawag ng method para sa OOP feedback
                     break;
                 case 2:
-                    this.Acp(studentID);
+                    this.Acp(studentID); // Tumatawag ng method para sa ACP feedback
                     break;
                 case 3:
-                    this.Dbms(studentID);
+                    this.Dbms(studentID); // Tumatawag ng method para sa DBMS feedback
                     break;
                 case 4:
-                    this.Cn(studentID);
+                    this.Cn(studentID); // Tumatawag ng method para sa CN feedback
                     break;
                 case 5:
-                    this.Phy(studentID);
+                    this.Phy(studentID); // Tumatawag ng method para sa Physics feedback
                     break;
                 case 6:
-                    this.Dm(studentID);
+                    this.Dm(studentID); // Tumatawag ng method para sa DM feedback
                     break;
                 case 7:
-                    this.Al(studentID);
+                    this.Al(studentID); // Tumatawag ng method para sa ASEAN Literature feedback
                     break;
                 case 8:
-                    this.Pf3(studentID);
+                    this.Pf3(studentID); // Tumatawag ng method para sa PATHFIT 3 feedback
                     break;
                 case 9:
                     System.out.println("EXITING FEEDBACK SYSTEM. THANK YOU!");
-                    return;
+                    return; // Exit ng student feedback portal
                 default:
                     System.out.println("INVALID SUBJECT. PLEASE TRY AGAIN.");
                     break;
@@ -120,7 +122,7 @@ public class Methods {
         }
     }
 
-    // Updated methods to accept studentID and save feedback
+    // Methods para sa bawat subject, tinatawag yung helper method
     public void Oop(String studentID) {
         collectAndSaveFeedback("Object Oriented Programming", studentID);
     }
@@ -153,58 +155,55 @@ public class Methods {
         collectAndSaveFeedback("PATHFIT 3", studentID);
     }
 
-    // Helper method to collect and save feedback for a subject
+    // Helper method para mangolekta at mag-save ng feedback
     private void collectAndSaveFeedback(String subject, String studentID) {
         System.out.println("Providing feedback for " + subject + ".");
-        System.out.println("Submitting feedback for Student ID: " + studentID);  // NEW: Display student ID for identification
-        
-        int rating = -1;  // Initialize to invalid value
+        System.out.println("Submitting feedback for Student ID: " + studentID);  // Ipakita yung student ID
+
+        int rating = -1;  // Simula ng invalid value
         while (rating < 1 || rating > 5) {
             System.out.print("Enter your rating (1-5): ");
             if (sc.hasNextInt()) {
                 rating = sc.nextInt();
                 if (rating < 1 || rating > 5) {
-                    System.out.println("Invalid rating. Please enter a number between 1 and 5.");
+                    System.out.println("Invalid rating. Please enter a number between 1 and 5."); // Check kung valid rating
                 }
             } else {
-                System.out.println("Invalid input. Please enter a number between 1 and 5.");
-                sc.next();  // Consume the invalid input to avoid infinite loop
+                System.out.println("Invalid input. Please enter a number between 1 and 5."); // Kung hindi number
+                sc.next();  // Kainin yung invalid input para maiwasan infinite loop
             }
         }
         
-        sc.nextLine();  // Consume newline after nextInt()
+        sc.nextLine();  // Kainin yung newline pagkatapos ng nextInt()
         System.out.print("Enter your comments: ");
         String comments = sc.nextLine();
 
-        // Create Feedback object and save to the map
+        // Gumawa ng Feedback object at i-save sa map
         Feedback feedback = new Feedback(studentID, rating, comments);
         feedbackData.get(subject).add(feedback);
         System.out.println("Feedback for " + subject + " submitted and saved!");
     }
 
-    // Admin method to view feedback (NOW INCLUDES INDIVIDUAL FEEDBACKS WITH STUDENT IDs)
+    // Admin method para makita lahat ng feedback
     private void viewFeedback() {
         System.out.println("====== AGGREGATED FEEDBACK ======");
         for (Map.Entry<String, List<Feedback>> entry : feedbackData.entrySet()) {
             String subject = entry.getKey();
             List<Feedback> feedbacks = entry.getValue();
             if (feedbacks.isEmpty()) {
-                System.out.println(subject + ": No feedback yet.");
+                System.out.println(subject + ": No feedback yet."); // Walang feedback pa
             } else {
                 double avgRating = feedbacks.stream().mapToInt(Feedback::getRating).average().orElse(0.0);
                 System.out.println(subject + ": Average Rating: " + String.format("%.2f", avgRating) + ", Total Feedbacks: " + feedbacks.size());
                 
-                // NEW: List all individual feedbacks with student IDs for identification
+                // Ipakita lahat ng individual feedback kasama student IDs
                 System.out.println("  Individual Feedbacks:");
                 for (Feedback f : feedbacks) {
                     System.out.println("    " + f.toString());  // Shows Student ID, Rating, Comments
                 }
             }
-            System.out.println();  // Blank line for readability
+            System.out.println();  // Blank line para readable
         }
-    }
-
-    private void manageSubjects() {
-        System.out.println("Managing subjects... (Feature not fully implemented. Add logic to add/remove subjects from the map.)");
+    
     }
 }
