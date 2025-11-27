@@ -47,3 +47,5 @@ public class Main {
 }
 
 //hello world
+
+// lakas mag code ni seano
