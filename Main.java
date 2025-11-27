@@ -48,4 +48,11 @@ public class Main {
 
 //hello world
 
+<<<<<<< HEAD
 // lakas mag code ni seano
+=======
+//ballian asbag
+//sean cute
+>>>>>>> 1bfc0b09d7d718ac8475404e460adf0e17e5d64c
+
+//palo mag code ni seano
