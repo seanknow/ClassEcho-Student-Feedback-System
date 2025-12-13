@@ -50,7 +50,8 @@ This is the simple flow chart of how the program works
 <img width="524" height="923" alt="Image" src="https://github.com/user-attachments/assets/08f244b0-0fe0-4480-bf93-fc79983021a5" />
 <img width="381" height="514" alt="Image" src="https://github.com/user-attachments/assets/91d51650-d5a4-4b47-9375-0972f347bae0" />
 
-Future Enhancement
+
+# Future Enhancement
 - GUI
 - Database Management
 - Logic
