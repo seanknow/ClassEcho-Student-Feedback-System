@@ -27,10 +27,12 @@ Administrators can see all feedback without worrying about how it is saved or ca
 The program is organized using three main classes: Main, Methods, and Feedback. Each class has a specific role in the ClassEcho: Student Feedback System.
 
 ***Main Class*** - This is the driver class that runs the program. It displays the main menu (basic login system) and lets users choose whether they are a student or an administrator. 
+
 <img width="402" height="250" alt="Image" src="https://github.com/user-attachments/assets/4d168d0e-0270-4773-8bc0-fc9240588527" />
 
 ***Methods Class*** - This class acts as the controller of the program. It contains the logic for both student and administrator portals. For students, 
 it displays the subject menu and collects feedback, storing it in a data structure. For administrators, it displays all feedback, calculates average ratings, and provides a summary. 
+
 <img width="433" height="250" alt="Image" src="https://github.com/user-attachments/assets/709f0396-df45-4f5f-9f61-8c9ee9215a71" />
 
 # How the program works?
