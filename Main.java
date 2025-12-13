@@ -5,17 +5,26 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         Methods methods = new Methods();
         int choice = 0;
-
+        
+        System.out.println("\n======== WELCOME CICS STUDENT! =========");
+        System.out.println();
         while (true) {
-            System.out.println("====== STUDENT FEEDBACK SYSTEM =====");
+            System.out.println("========================================");
+            System.out.println("======= STUDENT FEEDBACK SYSTEM ========");
+            System.out.println("========================================");
+            System.out.println();
             System.out.println("1. ADMINISTRATOR");
             System.out.println("2. STUDENT");
             System.out.println("3. EXIT");
             System.out.print("ENTER OPTION: ");
             choice = sc.nextInt();
+            System.out.println("\n========================================");
+
+
 
             switch (choice) {
                 case 1:
+                    System.out.println("\n===== ADMINISTRATOR LOGIN =====");
                     System.out.print("Enter Admin Code: ");
                     String adminCode = sc.next();
                     System.out.print("Enter Admin Password: ");
@@ -28,6 +37,7 @@ public class Main {
                     }
                     break;
                 case 2:
+                    System.out.println("\n===== STUDENT FEEDBACK PORTAL =====");
                     System.out.println();
                     System.out.print("ENTER UNIVERSITY SRCODE: ");
                     String studentID = sc.next();

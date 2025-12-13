@@ -51,7 +51,9 @@ public class Methods {
     public void adminPOV() {
         // Loop ng admin portal hanggang sa exit
         while (true) {
-            System.out.println("======ADMINISTRATOR PORTAL=====");
+            System.out.println("\n========================================");
+            System.out.println("========= ADMINISTRATOR PORTAL =========");
+            System.out.println("========================================");
             System.out.println("1. VIEW FEEDBACK");
             System.out.println("2. LOG OUT");
             System.out.print("ENTER OPTION: ");
@@ -74,7 +76,10 @@ public class Methods {
     public void studentPOV(String studentID) {  
         // loop for student portal hanggang sa exit
         while (true) {
-            System.out.println("======STUDENT FEEDBACK=====");
+            System.out.println("\n========================================");
+            System.out.println("========== STUDENT FEEDBACK ============");
+            System.out.println("========================================");
+            System.out.println("\nSELECT SUBJECT TO GIVE FEEDBACK:");
             System.out.println("1. OBJECT ORIENTED PROGRAMMING");
             System.out.println("2. ADVANCED COMPUTER PROGRAMMING");
             System.out.println("3. DATABASE MANAGEMENT SYSTEM");
@@ -189,7 +194,7 @@ public class Methods {
 
     // admin method para makita lahat ng feedback
     private void viewFeedback() {
-        System.out.println("====== LIST FEEDBACK ======");
+        System.out.println("\n====== LIST FEEDBACK ======");
         for (Map.Entry<String, List<Feedback>> entry : feedbackData.entrySet()) {
             String subject = entry.getKey();
             List<Feedback> feedbacks = entry.getValue();
