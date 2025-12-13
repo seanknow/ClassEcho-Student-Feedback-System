@@ -55,7 +55,3 @@ public class Main {
         }
     }
 }
-<<<<<<< HEAD
-=======
-//halaman update
->>>>>>> 130e2450ea0073002d8923f010aaafe33afd8ca5
