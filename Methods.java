@@ -160,37 +160,60 @@ public class Methods {
         collectAndSaveFeedback("PATHFIT 3", studentID);
     }
 
-    // helper method para mangolekta at mag-save ng feedback
+// helper method para mangolekta at mag-save ng feedback
     private void collectAndSaveFeedback(String subject, String studentID) {
         System.out.println();
-        System.out.println("Course/Subject: " + subject + ".");
-        System.out.println("Student ID: " + studentID);  // ipakita yung student ID
+        System.out.println("Course/Subject: " + subject);
+        System.out.println("Student ID: " + studentID);
 
-        int rating = -1;  // dimula ng invalid value
-        while (rating < 1 || rating > 5) {
-            System.out.println("RATE YOUR INSTRUCTOR | 1 - LOWEST | 2 - POOR | 3 - AVERAGE | 4 - GOOD | 5 - EXECELLENT");
-            System.out.print("Attenting class on time?: ");
-            if (sc.hasNextInt()) {
-                rating = sc.nextInt();
-                if (rating < 1 || rating > 5) {
-                    System.out.println("Invalid rating. Please enter a number between 1 and 5."); // chcheck kung valid rating
+        // 5 rating questions
+        String[] questions = {
+            "1. Attending class on time",
+            "2. Explains lessons clearly",
+            "3. Well-prepared for class",
+            "4. Encourages student participation",
+            "5. Overall teaching effectiveness"
+        };
+
+        int[] ratings = new int[questions.length];
+        int total = 0;
+
+        System.out.println("\nRATE YOUR INSTRUCTOR");
+        System.out.println("1 - LOWEST | 2 - POOR | 3 - AVERAGE | 4 - GOOD | 5 - EXCELLENT\n");
+
+        // collect ratings for each question
+        for (int i = 0; i < questions.length; i++) {
+            int rate = -1;
+            while (rate < 1 || rate > 5) {
+                System.out.print(questions[i] + ": ");
+                if (sc.hasNextInt()) {
+                    rate = sc.nextInt();
+                    if (rate < 1 || rate > 5) {
+                        System.out.println("Invalid rating. Please enter 1–5 only.");
+                    }
+                } else {
+                    System.out.println("Invalid input. Numbers only.");
+                    sc.next(); // consume invalid input
                 }
-            } else {
-                System.out.println("Invalid input. Please enter a number between 1 and 5."); // kung hindi number
-                sc.next();  // kainin yung invalid input para maiwasan infinite loop
             }
+            ratings[i] = rate;
+            total += rate;
         }
-        
-        sc.nextLine();  // kainin yung newline pagkatapos ng nextInt()
-        System.out.print("Enter your comments: ");
+
+        double averageRating = (double) total / ratings.length;
+        sc.nextLine(); // consume newline
+
+        System.out.print("\nEnter your comments: ");
         String comments = sc.nextLine();
 
-        // guimawa ng Feedback object at i-save sa map
-        Feedback feedback = new Feedback(studentID, rating, comments);
+        // Save feedback (using average rating)
+        Feedback feedback = new Feedback(studentID, (int) Math.round(averageRating), comments);
         feedbackData.get(subject).add(feedback);
-        System.out.println("\nFeedback for " + subject + " submitted!\n");
-    
+
+        System.out.println("\nFeedback submitted successfully!");
+        System.out.println("Average Rating: " + String.format("%.2f", averageRating) + "\n");
     }
+
 
     // admin method para makita lahat ng feedback
     private void viewFeedback() {
