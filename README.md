@@ -45,8 +45,23 @@ The program is organized using four main classes: Main, Methods, Subject, and Fe
 
 
 # How the program works?
+
 This is the simple flow chart of how the program works
+
 <img width="1118" height="639" alt="Image" src="https://github.com/user-attachments/assets/a3059359-88b9-4032-a02d-471f883504ea" />
+
+## Java Setup 
+1. Install Java Development Kit (JDK) - Download and install the latest stable version of the JDK (Java 17 or newer recommended)
+2. Verify Installation: Open your command prompt (CMD/Terminal) and type:
+<img width="242" height="61" alt="image" src="https://github.com/user-attachments/assets/6e18b82f-62a4-4d86-8f14-a3b441b21044" />
+3. Download Git and IDE (VSCode, Eclipse, etc.)
+4. Add extension of Java (if needed)
+5. After Downloading, Open CMD pormot or Terminal.
+6. Clone this repository:  
+  ```git clone https://github.com/seanknow/ClassEcho-Student-Feedback-System```
+7. Open the ClassEcho: Student Feedback System folder in your IDE
+8. Select the folder and wait for loading.
+9. Run the program.
 
 
 # Sample Ouput
@@ -61,15 +76,17 @@ This is the simple flow chart of how the program works
 
 
 # Future Enhancement
-- GUI
-- Database Management
-- Logic
-- Interactive Feedback
-- Security
+- ## GUI (Graphical User Interface) - Replacing the text-based command-line interface (CLI) with a visual interface (using tools like Swing, JavaFX, or a web framework).
+- ## Database Management - Transitioning from the current in-memory data storage (using ArrayList<Subject>) to a persistent database (e.g., MySQL, PostgreSQL, or SQLite).
+- ## Logic - Expanding the logic to include more sophisticated processing.
+- ## Security - Strengthening protection measures beyond the hardcoded admin login. This includes implementing proper user authentication (for admin access) and ensuring data transmission security.
 
-Student Dev:
+# Authors 
 - Pe Benito, Ballian Roi
 - Mendoza, Sean Rain
 - Pabellano, Shawn Vincent
 
-OOP Instructor: Mr. Juriel Comia 
+# Acknowledgement 
+
+
+# OOP Instructor: Mr. Juriel Comia 
