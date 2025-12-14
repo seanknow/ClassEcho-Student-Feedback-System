@@ -29,16 +29,20 @@ Purpoe of this is to simplify the application's external interface. The main app
 
 # Program Structured
 
-The program is organized using three main classes: Main, Methods, and Feedback. Each class has a specific role in the ClassEcho: Student Feedback System.
+The program is organized using four main classes: Main, Methods, Subject, and FeedbackSystem. Each class has a specific role in the ClassEcho: Student Feedback System.
 
-***Main Class*** - This is the driver class that runs the program. It displays the main menu (basic login system) and lets users choose whether they are a student or an administrator. 
+# ***Main.java*** - Responsible for program startup, managing the scanner resource, and handling the initial user login/role selection.
+- To serve as the application's entry point and orchestrate the calls to the high-level methods (adminPOV, studentPOV) provided by FeedbackSystem.
 
-<img width="402" height="250" alt="Image" src="https://github.com/user-attachments/assets/4d168d0e-0270-4773-8bc0-fc9240588527" />
+# ***Method.java*** - Defines the structure for a single, immutable feedback record. It demonstrates Encapsulation by protecting its data using the private final keywords.
+- To model the data (Student ID, Rating, Comments) and provide controlled, read-only access via public getter methods.
 
-***Methods Class*** - This class acts as the controller of the program. It contains the logic for both student and administrator portals. For students, 
-it displays the subject menu and collects feedback, storing it in a data structure. For administrators, it displays all feedback, calculates average ratings, and provides a summary. 
+# ***Subject*** - It is an encapsulated container that bundles a subject name with a dynamic list of its corresponding Feedback objects.
+- To efficiently organize feedback by subject name using a List-based approach, ensuring that feedback is always associated with the correct subject.
 
-<img width="433" height="250" alt="Image" src="https://github.com/user-attachments/assets/709f0396-df45-4f5f-9f61-8c9ee9215a71" />
+# ***FeedbackSystem.java*** - This class handles everything: system initialization, input validation, business logic (average calculation), data storage, and the admin/student views. It heavily uses Abstraction to hide the complex calculations and data management from the main application flow.
+- To act as the single point of contact for the Main class, providing the adminPOV and studentPOV interfaces.
+
 
 # How the program works?
 This is the simple flow chart of how the program works
