@@ -14,6 +14,7 @@ and the program can handle many feedback entries at the same time.
 Crucially, it involves restricting direct access to the internal state of an object, protecting it from unintended changes
 
 Purpose of this is to ensure data integrity (the data remains valid and consistent). By using the private keyword, we prevent external parts of the program (like Main.java) from directly modifying the feedback records or the internal list of subjects.
+
 <img width="462" height="116" alt="Image" src="https://github.com/user-attachments/assets/8d669aa9-e0a7-4ade-b318-0559a3807dfd" />
 
 ***Abstraction***Abstraction is the process of showing only essential information to the user and hiding the complex implementation details.
@@ -21,6 +22,7 @@ It allows users to interact with high-level functions without needing to underst
 
 Purpoe of this is to simplify the application's external interface. The main application only needs to know what the system does, not how it does the necessary steps 
 (calculating averages, looking up subjects, validating input).
+
 <img width="443" height="108" alt="Image" src="https://github.com/user-attachments/assets/5dd3c70c-3f7a-4ad1-a98a-a0b72d29166f" />
 
 ***List and ArrayList***
