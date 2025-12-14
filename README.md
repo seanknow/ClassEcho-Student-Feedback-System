@@ -23,6 +23,11 @@ Purpoe of this is to simplify the application's external interface. The main app
 
 <img width="443" height="108" alt="Image" src="https://github.com/user-attachments/assets/5dd3c70c-3f7a-4ad1-a98a-a0b72d29166f" />
 
+## Additional OOP Principle
+***Constructor***
+- Its primary purpose is to initialize (create) a new, valid Feedback object.
+<img width="573" height="110" alt="image" src="https://github.com/user-attachments/assets/b2b5b9e7-359a-42a8-a752-04dfb49aa147" />
+
 ***List and ArrayList***
 - Iterates through all subjects and prints all feedback.
 <img width="387" height="51" alt="Image" src="https://github.com/user-attachments/assets/3e3ca4f5-f951-478a-8b5e-546277059481" />
