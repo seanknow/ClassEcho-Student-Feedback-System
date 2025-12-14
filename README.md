@@ -34,13 +34,13 @@ The program is organized using four main classes: Main, Methods, Subject, and Fe
 <img width="116" height="32" alt="Image" src="https://github.com/user-attachments/assets/2b0acc01-0293-4a23-839b-91122c317164" /> - Responsible for program startup, managing the scanner resource, and handling the initial user login/role selection.
 - To serve as the application's entry point and orchestrate the calls to the high-level methods (adminPOV, studentPOV) provided by FeedbackSystem.
 
-## ***Method.java*** - Defines the structure for a single, immutable feedback record. It demonstrates Encapsulation by protecting its data using the private final keywords.
+<img width="131" height="32" alt="Image" src="https://github.com/user-attachments/assets/a3148af6-30c5-469d-951e-5201ffa6c37e" /> - Defines the structure for a single, immutable feedback record. It demonstrates Encapsulation by protecting its data using the private final keywords.
 - To model the data (Student ID, Rating, Comments) and provide controlled, read-only access via public getter methods.
 
-## ***Subject*** - It is an encapsulated container that bundles a subject name with a dynamic list of its corresponding Feedback objects.
+<img width="119" height="28" alt="Image" src="https://github.com/user-attachments/assets/311c4a49-a188-4198-ac18-f40e6c6806ba" /> - It is an encapsulated container that bundles a subject name with a dynamic list of its corresponding Feedback objects.
 - To efficiently organize feedback by subject name using a List-based approach, ensuring that feedback is always associated with the correct subject.
 
-## ***FeedbackSystem.java*** - This class handles everything: system initialization, input validation, business logic (average calculation), data storage, and the admin/student views. It heavily uses Abstraction to hide the complex calculations and data management from the main application flow.
+<img width="166" height="31" alt="Image" src="https://github.com/user-attachments/assets/7f2670d5-7a07-4e04-acbf-8819c9b48d92" /> - This class handles everything: system initialization, input validation, business logic (average calculation), data storage, and the admin/student views. It heavily uses Abstraction to hide the complex calculations and data management from the main application flow.
 - To act as the single point of contact for the Main class, providing the adminPOV and studentPOV interfaces.
 
 
