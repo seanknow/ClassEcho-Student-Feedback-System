@@ -21,6 +21,14 @@ Administrators can see all feedback without worrying about how it is saved or ca
 
 <img width="309" height="107" alt="Image" src="https://github.com/user-attachments/assets/50dee4cc-aa87-43c2-8fdc-d6d6d7742a4e" />
 
+## Additional Concept
+***Map and HashMap***
+- Adds the new feedback to the list.
+<img width="620" height="40" alt="Image" src="https://github.com/user-attachments/assets/c9fa03b8-7cfb-430a-a903-33cb4b26ca48" />
+
+***List and ArrayList***
+- Iterates through all subjects and prints all feedback.
+<img width="387" height="51" alt="Image" src="https://github.com/user-attachments/assets/3e3ca4f5-f951-478a-8b5e-546277059481" />
 
 # Program Structured
 
