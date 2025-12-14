@@ -90,11 +90,10 @@ This is the simple flow chart of how the program works
 - ## Security - Strengthening protection measures beyond the hardcoded admin login. This includes implementing proper user authentication (for admin access) and ensuring data transmission security.
 
 # Authors 
-- Pe Benito, Ballian Roi
-- Mendoza, Sean Rain
-- Pabellano, Shawn Vincent
+- **Pe Benito, Ballian Roi**
+- **Mendoza, Sean Rain**
+- **Pabellano, Shawn Vincent**
 
 # Acknowledgement 
+We would like to sincerely thank our instructor, **Mr. Juriel Comia**, for their unwavering guidance, patience, and support throughout this project. Their insightful feedback and encouragement were essential to the successful completion of our work.
 
-
-# OOP Instructor: Mr. Juriel Comia 
