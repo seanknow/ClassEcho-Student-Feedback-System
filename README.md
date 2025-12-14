@@ -53,15 +53,21 @@ This is the simple flow chart of how the program works
 ## Java Setup 
 1. Install Java Development Kit (JDK) - Download and install the latest stable version of the JDK (Java 17 or newer recommended)
 2. Verify Installation: Open your command prompt (CMD/Terminal) and type:
+   
 <img width="242" height="61" alt="image" src="https://github.com/user-attachments/assets/6e18b82f-62a4-4d86-8f14-a3b441b21044" />
+
 3. Download Git and IDE (VSCode, Eclipse, etc.)
 4. Add extension of Java (if needed)
 5. After Downloading, Open CMD pormot or Terminal.
-6. Clone this repository:  
-  ```git clone https://github.com/seanknow/ClassEcho-Student-Feedback-System```
-7. Open the ClassEcho: Student Feedback System folder in your IDE
-8. Select the folder and wait for loading.
-9. Run the program.
+6. Clone this repository:
+
+```bash
+  git clone https://github.com/seanknow/ClassEcho-Student-Feedback-System`
+```
+
+9. Open the ClassEcho: Student Feedback System folder in your IDE
+10. Select the folder and wait for loading.
+11. Run the program.
 
 
 # Sample Ouput
