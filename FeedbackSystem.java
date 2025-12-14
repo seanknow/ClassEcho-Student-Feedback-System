@@ -9,12 +9,12 @@ import java.util.Scanner;
 public class FeedbackSystem {
     private final Scanner sc;
     // Data Storage (Repository logic): Listahan na nagho-hold ng Subject objects
-    private final List<Subject> subjectData = new ArrayList<>(); 
+    private final List<Subject> subjectData = new ArrayList<>();
     
     private final List<String> subjectNames = List.of(
-        "Object Oriented Programming", "Advanced Computer Programming", 
-        "Database Management System", "Computer Networking", 
-        "Physics-Calculus Based", "Discrete Mathematics", 
+        "Object Oriented Programming", "Advanced Computer Programming",
+        "Database Management System", "Computer Networking",
+        "Physics-Calculus Based", "Discrete Mathematics",
         "ASEAN Literature", "PATHFIT 3"
     );
 
@@ -128,8 +128,8 @@ public class FeedbackSystem {
             System.out.println(subject.getName() + ": No feedback yet.");
         } else {
                 // Kalkulasyon ng average rating (gamit ang Stream API)
-            double avgRating = feedbacks.stream().mapToInt(Feedback::getRating).average().orElse(0.0);                             
-            System.out.println(subject.getName() + ": Average Rating: " + String.format("%.2f", avgRating) 
+            double avgRating = feedbacks.stream().mapToInt(Feedback::getRating).average().orElse(0.0);
+            System.out.println(subject.getName() + ": Average Rating: " + String.format("%.2f", avgRating)
             + ", Total Feedbacks: " + feedbacks.size());
             System.out.println("  Individual Feedbacks:");
                 for (Feedback f : feedbacks) {

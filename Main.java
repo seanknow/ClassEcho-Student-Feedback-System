@@ -19,7 +19,7 @@ public class Main {
     System.out.println("1. ADMINISTRATOR");
     System.out.println("2. STUDENT");
     System.out.println("3. EXIT");
-    System.out.print("ENTER OPTION: ");        
+    System.out.print("ENTER OPTION: ");
     if (sc.hasNextInt()) {
     choice = sc.nextInt();
         System.out.println("\n========================================");

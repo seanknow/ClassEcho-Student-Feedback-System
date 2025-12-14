@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Class na nagha-hold ng pangalan ng subject at listahan ng Feedback nito.
- */
+
+ // Class na nagha-hold ng pangalan ng subject at listahan ng Feedback nito.
+
 class Subject {
     private final String name; // Pangalan ng subject
     private final List<Feedback> feedbackList; // Listahan ng feedback para sa subject na ito
