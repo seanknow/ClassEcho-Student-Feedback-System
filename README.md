@@ -31,7 +31,7 @@ Purpoe of this is to simplify the application's external interface. The main app
 
 The program is organized using four main classes: Main, Methods, Subject, and FeedbackSystem. Each class has a specific role in the ClassEcho: Student Feedback System.
 
-## ***Main.java*** - Responsible for program startup, managing the scanner resource, and handling the initial user login/role selection.
+<img width="116" height="32" alt="Image" src="https://github.com/user-attachments/assets/2b0acc01-0293-4a23-839b-91122c317164" /> - Responsible for program startup, managing the scanner resource, and handling the initial user login/role selection.
 - To serve as the application's entry point and orchestrate the calls to the high-level methods (adminPOV, studentPOV) provided by FeedbackSystem.
 
 ## ***Method.java*** - Defines the structure for a single, immutable feedback record. It demonstrates Encapsulation by protecting its data using the private final keywords.
