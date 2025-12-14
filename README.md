@@ -31,16 +31,16 @@ Purpoe of this is to simplify the application's external interface. The main app
 
 The program is organized using four main classes: Main, Methods, Subject, and FeedbackSystem. Each class has a specific role in the ClassEcho: Student Feedback System.
 
-# ***Main.java*** - Responsible for program startup, managing the scanner resource, and handling the initial user login/role selection.
+## ***Main.java*** - Responsible for program startup, managing the scanner resource, and handling the initial user login/role selection.
 - To serve as the application's entry point and orchestrate the calls to the high-level methods (adminPOV, studentPOV) provided by FeedbackSystem.
 
-# ***Method.java*** - Defines the structure for a single, immutable feedback record. It demonstrates Encapsulation by protecting its data using the private final keywords.
+## ***Method.java*** - Defines the structure for a single, immutable feedback record. It demonstrates Encapsulation by protecting its data using the private final keywords.
 - To model the data (Student ID, Rating, Comments) and provide controlled, read-only access via public getter methods.
 
-# ***Subject*** - It is an encapsulated container that bundles a subject name with a dynamic list of its corresponding Feedback objects.
+## ***Subject*** - It is an encapsulated container that bundles a subject name with a dynamic list of its corresponding Feedback objects.
 - To efficiently organize feedback by subject name using a List-based approach, ensuring that feedback is always associated with the correct subject.
 
-# ***FeedbackSystem.java*** - This class handles everything: system initialization, input validation, business logic (average calculation), data storage, and the admin/student views. It heavily uses Abstraction to hide the complex calculations and data management from the main application flow.
+## ***FeedbackSystem.java*** - This class handles everything: system initialization, input validation, business logic (average calculation), data storage, and the admin/student views. It heavily uses Abstraction to hide the complex calculations and data management from the main application flow.
 - To act as the single point of contact for the Main class, providing the adminPOV and studentPOV interfaces.
 
 
