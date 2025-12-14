@@ -65,19 +65,21 @@ This is the simple flow chart of how the program works
   git clone https://github.com/seanknow/ClassEcho-Student-Feedback-System`
 ```
 
-9. Open the ClassEcho: Student Feedback System folder in your IDE
-10. Select the folder and wait for loading.
-11. Run the program.
+7. Open the ClassEcho: Student Feedback System folder in your IDE
+8. Select the folder and wait for loading.
+9. Run the program.
 
 
 # Sample Ouput
 
-## ADMIN
+## ADMIN 
 <img width="404" height="1044" alt="Image" src="https://github.com/user-attachments/assets/02fd0b95-ee64-4488-bf80-5cda71dc3ef7" />
+
 <img width="367" height="348" alt="Image" src="https://github.com/user-attachments/assets/d18ff04d-cc70-43d1-a8a6-1bc2d8f7e089" />
 
 ## STUDENT
 <img width="524" height="923" alt="Image" src="https://github.com/user-attachments/assets/08f244b0-0fe0-4480-bf93-fc79983021a5" />
+
 <img width="381" height="514" alt="Image" src="https://github.com/user-attachments/assets/91d51650-d5a4-4b47-9375-0972f347bae0" />
 
 
