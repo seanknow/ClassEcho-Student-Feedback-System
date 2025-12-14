@@ -10,16 +10,18 @@ like the student ID, rating, and comments, while the Methods class manages the p
 The Main class runs the program and lets users choose between the student or administrator portal. Each Feedback object holds one students response, 
 and the program can handle many feedback entries at the same time.
 
-***Encapsulation*** is used by keeping the data in the Feedback class private and only allowing access through public methods. 
-This keeps the student information safe and prevents accidental changes.
+***Encapsulation*** Encapsulation is the bundling of data (attributes) and the methods that operate on that data into a single unit (a class). 
+Crucially, it involves restricting direct access to the internal state of an object, protecting it from unintended changes
 
-<img width="633" height="302" alt="Image" src="https://github.com/user-attachments/assets/f5aeede0-2474-4eb7-be0f-9cfff530d9f5" />
+Purpose of this is to ensure data integrity (the data remains valid and consistent). By using the private keyword, we prevent external parts of the program (like Main.java) from directly modifying the feedback records or the internal list of subjects.
+<img width="462" height="116" alt="Image" src="https://github.com/user-attachments/assets/8d669aa9-e0a7-4ade-b318-0559a3807dfd" />
 
-***Abstraction*** is applied by hiding the details of how feedback is collected and stored. 
-Students only need to choose a subject, give a rating, and write comments, while the program handles the rest. 
-Administrators can see all feedback without worrying about how it is saved or calculated.
+***Abstraction***Abstraction is the process of showing only essential information to the user and hiding the complex implementation details.
+It allows users to interact with high-level functions without needing to understand the underlying code.
 
-<img width="309" height="107" alt="Image" src="https://github.com/user-attachments/assets/50dee4cc-aa87-43c2-8fdc-d6d6d7742a4e" />
+Purpoe of this is to simplify the application's external interface. The main application only needs to know what the system does, not how it does the necessary steps 
+(calculating averages, looking up subjects, validating input).
+<img width="443" height="108" alt="Image" src="https://github.com/user-attachments/assets/5dd3c70c-3f7a-4ad1-a98a-a0b72d29166f" />
 
 ***List and ArrayList***
 - Iterates through all subjects and prints all feedback.
