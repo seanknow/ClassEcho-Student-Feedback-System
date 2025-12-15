@@ -59,7 +59,10 @@ This is the simple flow chart of how the program works
 1. Install Java Development Kit (JDK) - Download and install the latest stable version of the JDK (Java 17 or newer recommended)
 2. Verify Installation: Open your command prompt (CMD/Terminal) and type:
    
-<img width="242" height="61" alt="image" src="https://github.com/user-attachments/assets/6e18b82f-62a4-4d86-8f14-a3b441b21044" />
+```bash
+java --version
+javac --version
+```
 
 3. Download Git and IDE (VSCode, Eclipse, etc.)
 4. Add extension of Java (if needed)
