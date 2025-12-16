@@ -143,7 +143,7 @@ https://dione.batstate-u.edu.ph/student/#/dashboard
 ```
 <img width="1223" height="166" alt="image" src="https://github.com/user-attachments/assets/d8e42d1c-7e88-46c0-92b9-98dfa3f5d01f" />
 
-CICS Feedback Form - Suggestion for improvement in CICS
+- CICS Feedback Form - Suggestion for improvement in CICS
 ``` 
 https://docs.google.com/forms/d/e/1FAIpQLScmo6Nb6JMj5Xw8rL2iVc8ORSqon-5mo8qwuGerNAawoJUYlQ/closedform
 ```
@@ -151,6 +151,8 @@ https://docs.google.com/forms/d/e/1FAIpQLScmo6Nb6JMj5Xw8rL2iVc8ORSqon-5mo8qwuGer
 <img width="1024" height="158" alt="image" src="https://github.com/user-attachments/assets/903c8937-70c7-4101-a97c-0f1e24f1978f" />
 
 - W3School - Java Tutorial and Reference
+
 ```
 - https://www.w3schools.com/java/default.asp
+- https://www.irejournals.com/formatedpaper/1700576.pdf
 ```
