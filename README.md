@@ -103,12 +103,8 @@ javac --version
 ### STUDENT FEEDBACK (SELECTION)
 <img width="416" height="357" alt="image" src="https://github.com/user-attachments/assets/b86ced58-9c17-4705-aa03-6b192262f5dd" />
 
-### EVALUATION FORM (W/O FEEDBACK)
+### EVALUATION FORM (FEEDBACK)
 <img width="594" height="389" alt="image" src="https://github.com/user-attachments/assets/d9ae22fa-d560-4fa1-a4ff-c117b1a47507" />
-
-### EVAULATION (FEEDBACK STORE)
-<img width="584" height="377" alt="image" src="https://github.com/user-attachments/assets/f2ca7c4f-53dd-48ac-828b-7c653024166b" />
-
 
 
 # Future Enhancement
