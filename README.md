@@ -137,20 +137,20 @@ javac --version
 We would like to sincerely thank our instructor, **Mr. Juriel Comia**, for their unwavering guidance, patience, and support throughout this project. Their insightful feedback and encouragement were essential to the successful completion of our work.
 
 # References
-- BSU Portal - PERFORMANCE EVALUATION INSTRUMENT FOR TEACHING EFFECTIVENESS BY THE STUDENTS
+- ## **BSU Portal** - PERFORMANCE EVALUATION INSTRUMENT FOR TEACHING EFFECTIVENESS BY THE STUDENTS
 ```bash
 https://dione.batstate-u.edu.ph/student/#/dashboard
 ```
 <img width="1223" height="166" alt="image" src="https://github.com/user-attachments/assets/d8e42d1c-7e88-46c0-92b9-98dfa3f5d01f" />
 
-- CICS Feedback Form - Suggestion for improvement in CICS
+- ## **CICS Feedback Form** - Suggestion for improvement in CICS
 ``` 
 https://docs.google.com/forms/d/e/1FAIpQLScmo6Nb6JMj5Xw8rL2iVc8ORSqon-5mo8qwuGerNAawoJUYlQ/closedform
 ```
 <img width="694" height="868" alt="image" src="https://github.com/user-attachments/assets/8d6e6fe8-324e-4861-b7d4-6389944e94ab" />
 <img width="1024" height="158" alt="image" src="https://github.com/user-attachments/assets/903c8937-70c7-4101-a97c-0f1e24f1978f" />
 
-- W3School - Java Tutorial and Reference
+- ## **W3School** Java Tutorial and Reference
 
 ```
 - https://www.w3schools.com/java/default.asp
