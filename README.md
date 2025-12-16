@@ -112,10 +112,10 @@ javac --version
 
 
 # Future Enhancement
-- ## GUI (Graphical User Interface) - Replacing the text-based command-line interface (CLI) with a visual interface (using tools like Swing, JavaFX, or a web framework).
-- ## Database Management - Transitioning from the current in-memory data storage (using ArrayList<Subject>) to a persistent database (e.g., MySQL, PostgreSQL, or SQLite).
-- ## Logic - Expanding the logic to include more sophisticated processing.
-- ## Security - Strengthening protection measures beyond the hardcoded admin login. This includes implementing proper user authentication (for admin access) and ensuring data transmission security.
+- **GUI (Graphical User Interface)** - Replacing the text-based command-line interface (CLI) with a visual interface (using tools like Swing, JavaFX, or a web framework).
+- **Database Management** - Transitioning from the current in-memory data storage (using ArrayList<Subject>) to a persistent database (e.g., MySQL, PostgreSQL, or SQLite).
+- **Logic** - Expanding the logic to include more sophisticated processing.
+- **Security** - Strengthening protection measures beyond the hardcoded admin login. This includes implementing proper user authentication (for admin access) and ensuring data transmission security.
 
 # Authors 
 ## **Pe Benito, Ballian Roi**
