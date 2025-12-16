@@ -147,8 +147,8 @@ https://dione.batstate-u.edu.ph/student/#/dashboard
 ``` 
 https://docs.google.com/forms/d/e/1FAIpQLScmo6Nb6JMj5Xw8rL2iVc8ORSqon-5mo8qwuGerNAawoJUYlQ/closedform
 ```
-<img width="694" height="868" alt="image" src="https://github.com/user-attachments/assets/8d6e6fe8-324e-4861-b7d4-6389944e94ab" />
-<img width="1024" height="158" alt="image" src="https://github.com/user-attachments/assets/903c8937-70c7-4101-a97c-0f1e24f1978f" />
+<img width="713" height="117" alt="image" src="https://github.com/user-attachments/assets/c711cee3-24e8-4c2d-afec-90e66beb27e9" />
+
 
 - ## **W3School** Java Tutorial and Reference
 
