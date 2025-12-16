@@ -80,15 +80,35 @@ javac --version
 
 # Sample Ouput
 
-## ADMIN 
-<img width="404" height="1044" alt="Image" src="https://github.com/user-attachments/assets/02fd0b95-ee64-4488-bf80-5cda71dc3ef7" />
+## ADMINISTRATOR
 
-<img width="367" height="348" alt="Image" src="https://github.com/user-attachments/assets/d18ff04d-cc70-43d1-a8a6-1bc2d8f7e089" />
+### MAIN
+<img width="398" height="251" alt="image" src="https://github.com/user-attachments/assets/9097d819-d0a5-4ed1-8335-a86411c0796b" />
+
+### ADMINISTRATOR PORTAL
+<img width="404" height="294" alt="image" src="https://github.com/user-attachments/assets/4b12835b-e0f9-4864-95ed-142f453d5eb4" />
+
+### ADMIN ACCESS (VIEW FEEDBACK W/O FEEDBACK)
+<img width="448" height="532" alt="image" src="https://github.com/user-attachments/assets/6dd2f9bc-4fe6-4c6f-87bb-de6a8ef8662c" />
+
+### VIEW FEEDBACK (FEEDBACK STORE)
+<img width="683" height="733" alt="image" src="https://github.com/user-attachments/assets/15145d1c-a912-4daa-9101-eebae954982e" />
+
 
 ## STUDENT
-<img width="524" height="923" alt="Image" src="https://github.com/user-attachments/assets/08f244b0-0fe0-4480-bf93-fc79983021a5" />
 
-<img width="381" height="514" alt="Image" src="https://github.com/user-attachments/assets/91d51650-d5a4-4b47-9375-0972f347bae0" />
+### STUDENT PORTAL
+<img width="401" height="329" alt="image" src="https://github.com/user-attachments/assets/59849cb7-7195-4711-aae0-0300b60cbb40" />
+
+### STUDENT FEEDBACK (SELECTION)
+<img width="416" height="357" alt="image" src="https://github.com/user-attachments/assets/b86ced58-9c17-4705-aa03-6b192262f5dd" />
+
+### EVALUATION FORM (W/O FEEDBACK)
+<img width="594" height="389" alt="image" src="https://github.com/user-attachments/assets/d9ae22fa-d560-4fa1-a4ff-c117b1a47507" />
+
+### EVAULATION (FEEDBACK STORE)
+<img width="584" height="377" alt="image" src="https://github.com/user-attachments/assets/f2ca7c4f-53dd-48ac-828b-7c653024166b" />
+
 
 
 # Future Enhancement
@@ -98,10 +118,29 @@ javac --version
 - ## Security - Strengthening protection measures beyond the hardcoded admin login. This includes implementing proper user authentication (for admin access) and ensuring data transmission security.
 
 # Authors 
-- **Pe Benito, Ballian Roi**
-- **Mendoza, Sean Rain**
-- **Pabellano, Shawn Vincent**
+## **Pe Benito, Ballian Roi**
+- Implemented the OOP abstraction principles to encapsulate and hide the internal processes of the feedback system, ensuring a clean and maintainable design.
+- Batangas State University TNEU Alangilan Campus | BS Information Technology (Second Year)
+- 
+  
+## **Mendoza, Sean Rain**
+- Led the conceptualization of the project. He initiated the main program and designed the overall structure, workflow, and core logic of the system.
+- Batangas State University TNEU Alangilan Campus | BS Information Technology (Second Year)
+- seanrainbmendoza@gmail.com
+  
+## **Pabellano, Shawn Vincent**
+- Managed the application of Object-Oriented Programming (OOP) principles. He developed the class implementations and handled the internal logic of the system.
+- Batangas State University TNEU Alangilan Campus | BS Information Technology (Second Year)
+- vincentpabellano13@gmail.com
 
 # Acknowledgement 
 We would like to sincerely thank our instructor, **Mr. Juriel Comia**, for their unwavering guidance, patience, and support throughout this project. Their insightful feedback and encouragement were essential to the successful completion of our work.
 
+# References
+- https://dione.batstate-u.edu.ph/student/#/dashboard
+<img width="1223" height="166" alt="image" src="https://github.com/user-attachments/assets/d8e42d1c-7e88-46c0-92b9-98dfa3f5d01f" />
+
+- https://docs.google.com/forms/d/e/1FAIpQLScmo6Nb6JMj5Xw8rL2iVc8ORSqon-5mo8qwuGerNAawoJUYlQ/closedform
+<img width="694" height="868" alt="image" src="https://github.com/user-attachments/assets/8d6e6fe8-324e-4861-b7d4-6389944e94ab" />
+
+<img width="1024" height="158" alt="image" src="https://github.com/user-attachments/assets/903c8937-70c7-4101-a97c-0f1e24f1978f" />
